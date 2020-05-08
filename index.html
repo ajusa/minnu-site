@@ -11,10 +11,47 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="main.css" /><!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 </head>
 
 <body>
-    <section class="hero is-info is-fullheight">
+    <section class="hero is-fullheight is-info has-carousel">
+        <div id="carousel-demo" class="hero-carousel">
+            <div class="item-1" style="height: 100%">
+                <div class="hero-body has-text-centered" style="height: 100%">
+                    <div class="column is-6 is-offset-3">
+                        <h1 class="title">
+                            Lorem ipsum dolor sit amet.
+                        </h1>
+                        <h2 class="subtitle">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta itaque error illo nesciunt ad, odit ratione reiciendis cum, totam quasi, saepe recusandae nulla iure quaerat eum debitis laborum nihil. Sed laborum quidem corporis repudiandae accusamus reiciendis sint, sapiente dolorem harum.
+                        </h2>
+                        <div class="box">
+                            <div class="field is-grouped">
+                                <p class="control is-expanded">
+                                    <input class="input" type="text" placeholder="Enter your email">
+                                </p>
+                                <p class="control">
+                                    <a class="button is-info">
+                                        Notify Me
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-2">
+                <div class="hero-body container has-text-centered" style="height: 100%">
+                    Lorem ipsum dolor sit amet.
+                </div>
+            </div>
+            <div class="item-3">
+                <div class="hero-body container has-text-centered" style="height: 100%">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, aspernatur!
+                </div>
+            </div>
+        </div>
         <div class="hero-head">
             <nav class="navbar">
                 <div class="container">
@@ -67,30 +104,6 @@
                 </div>
             </nav>
         </div>
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="column is-6 is-offset-3">
-                    <h1 class="title">
-                        Lorem ipsum dolor sit amet.
-                    </h1>
-                    <h2 class="subtitle">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta itaque error illo nesciunt ad, odit ratione reiciendis cum, totam quasi, saepe recusandae nulla iure quaerat eum debitis laborum nihil. Sed laborum quidem corporis repudiandae accusamus reiciendis sint, sapiente dolorem harum.
-                    </h2>
-                    <div class="box">
-                        <div class="field is-grouped">
-                            <p class="control is-expanded">
-                                <input class="input" type="text" placeholder="Enter your email">
-                            </p>
-                            <p class="control">
-                                <a class="button is-info">
-                                    Notify Me
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <section class="section is-medium">
         <div class="container">
@@ -125,6 +138,19 @@
         </div>
     </footer>
     <script async type="text/javascript" src="bulma.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script>
+    bulmaCarousel.attach('#carousel-demo', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        navigation: true,
+        pagination: true,
+        autoplay: false,
+        autoplaySpeed: 3000,
+        loop: true,
+        breakpoints: []
+    })
+    </script>
 </body>
 
 </html>

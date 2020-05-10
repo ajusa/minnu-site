@@ -1,0 +1,30 @@
+{
+  "name": "minnu-site",
+  "version": "1.0.0",
+  "description": "## Project setup ``` npm install ```",
+  "main": "index.js",
+  "dependencies": {
+    "sergey": "^0.0.13"
+  },
+  "devDependencies": {
+    "bulma": "^0.8.2",
+    "node-sass": "^4.14.1"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/main.scss css/main.css",
+    "start": "sergey",
+    "dev": "sergey --watch",
+    "css-watch": "npm run css-build -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajusa/minnu-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ajusa/minnu-site/issues"
+  },
+  "homepage": "https://github.com/ajusa/minnu-site#readme"
+}

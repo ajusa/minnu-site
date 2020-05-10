@@ -12,8 +12,8 @@
   },
   "scripts": {
     "css-build": "node-sass --omit-source-map-url sass/main.scss css/main.css",
-    "start": "sergey",
-    "dev": "sergey --watch",
+    "start": "sergey --output=docs",
+    "dev": "sergey --output=docs --watch",
     "css-watch": "npm run css-build -- --watch"
   },
   "repository": {

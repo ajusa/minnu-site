@@ -1,5 +1,5 @@
 .hero.bg {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://unsplash.it/1200/901?random") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/home.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -10,7 +10,23 @@ svg {
   color: black; }
 
 .navbar-item {
-  height: 5rem; }
+  height: 6rem; }
+
+#logo:hover {
+  background-color: black !important; }
+
+.dim {
+  opacity: 1;
+  transition: opacity .15s ease-in; }
+
+.dim:hover,
+.dim:focus {
+  opacity: .7;
+  transition: opacity .15s ease-in; }
+
+.dim:active {
+  opacity: .8;
+  transition: opacity .15s ease-out; }
 
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {

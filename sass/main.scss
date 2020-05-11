@@ -2,24 +2,44 @@
 
 $primary: #A28D6F;
 $link: $primary;
+
 .hero.bg {
-	background: linear-gradient(
-		rgba(0, 0, 0, 0.5),
-		rgba(0, 0, 0, 0.5)
-	), url('https://unsplash.it/1200/901?random') no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), url('../images/home.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
 }
 
 svg {
-	color: black;
+    color: black;
 }
 
 .navbar-item {
-	height: 5rem;
+    height: 6rem;
+}
+
+#logo:hover {
+    background-color: black !important;
+
+}
+
+.dim {
+    opacity: 1;
+    transition: opacity .15s ease-in;
+}
+
+.dim:hover,
+.dim:focus {
+    opacity: .7;
+    transition: opacity .15s ease-in;
+}
+
+.dim:active {
+    opacity: .8;
+    transition: opacity .15s ease-out;
 }
 
 @import "../node_modules/bulma/bulma.sass";

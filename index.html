@@ -34,17 +34,10 @@
         outline: 0px dotted currentColor;
     }
     </style>
-    <script>
-    var app
-
-    function init() {
-        app = this;
-    }
-    </script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
-<body class="sans-serif lh-copy" x-data="{page: location.hash}" x-init="init" onhashchange="app.page = location.hash">
+<body class="sans-serif lh-copy" x-data="{page: location.hash}" @hashchange.window="page = location.hash">
     <section class="vh-75 cover" style="background: linear-gradient(120deg, white 50%, #E8DEBD 50%)">
         <nav class="db dt-l w-100 border-box pa3 ph5-l">
             <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb3 mb0-l" href="#" title="Home">

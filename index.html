@@ -1,169 +1,180 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Website Title</title>
-    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon" />
+    <title> </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/60dd5715de.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <style>
+    .brand {
+        color: #E8DEBD;
+    }
+
+    .bg-brand {
+        background-color: #E8DEBD;
+    }
+
+    .dark-brand {
+        color: #857568;
+    }
+
+    .bg-dark-brand {
+        background-color: #857568;
+    }
+
+    .nunito {
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .link:focus {
+        transition: color .15s ease-in;
+        outline: 0px dotted currentColor;
+    }
+    </style>
+    <script>
+    var app
+
+    function init() {
+        app = this;
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
-<body>
-    <section class="hero bg is-fullheight is-primary has-carousel">
-        <div class="hero-head">
-            <nav class="navbar" style="background-color: black">
-                <div class="container">
-                    <div class="navbar-brand">
-                        <a class="navbar-item" id="logo" href="../">
-                            <img class="dim" style="transform: scale(3)" src="images/logo.png" alt="Logo">
-                        </a>
-                        <span class="navbar-burger burger has-text-white" data-target="navbarMenu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
-                    </div>
-                    <div id="navbarMenu" class="navbar-menu">
-                        <div class="navbar-end">
-                            <span class="navbar-item">
-                                <a class="has-text-white" href="#">
-                                    <span>Home</span>
-                                </a>
-                            </span>
-                            <span class="navbar-item">
-                                <a class="has-text-white" href="#">
-                                    <span>Test your English</span>
-                                </a>
-                            </span>
-                            <span class="navbar-item">
-                                <a class="has-text-white" href="#">
-                                    <span>Courses</span>
-                                </a>
-                            </span>
-                            <span class="navbar-item">
-                                <a class="has-text-white" href="#">
-                                    <span>Contact Us!</span>
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="hero-footer section is-medium" style="height: 100%">
-            <div class="column is-6 has-text-left">
-                <h1 class="is-size-1 has-text-weight-bold is-uppercase">
-                    English Espresso
-                </h1>
-                <h2 class="subtitle has-text-gray">
-                    <b>Step towards fluency in English -</b> An interactive approach to learn English. Learning and practising while being at home is fun and convenient. A customized solution to give proper attention to an individual's interest
-                </h2>
+<body class="sans-serif lh-copy" x-data="{page: location.hash}" x-init="init" onhashchange="app.page = location.hash">
+    <section class="vh-75 cover" style="background: linear-gradient(120deg, white 50%, #E8DEBD 50%)">
+        <nav class="db dt-l w-100 border-box pa3 ph5-l">
+            <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb3 mb0-l" href="#" title="Home">
+                <img src="images/logo2.png" class="mw3 mw4-ns dib" alt="Site Name">
+            </a>
+            <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
+                <a class="dim link grow dark-gray f5 f4-l dib mr3 mr4-l" href="#">Home</a>
+                <a class="dim link grow dark-gray f5 f4-l dib mr3 mr4-l" href="#courses">Courses</a>
+                <a class="dim link grow dark-gray f5 f4-l dib mr3 mr4-l" href="#">Contact Us</a>
             </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container">
-            <h1 class="title">Courses</h1>
-            <p> To cater everyone’s learning interest in the English language, we have designed our courses in the following categories:</p>
-            <hr>
-            <div class="columns">
-                <div class="column content">
-                    <h4 class="title has-text-weight-bold">English One</h2>
-                        <div class="buttons">
-                            <button class="button is-link is-rounded is-success">Beginner</button>
-                            <button class="button is-link is-rounded is-warning">Intermediate</button>
-                        </div>
-                </div>
-                <div class="column content">
-                    <h4 class="title has-text-weight-bold">English Swift</h2>
-                        <div class="buttons">
-                            <button class="button is-link is-rounded is-light">Kids</button>
-                            <button class="button is-link is-rounded is-info">Adults</button>
-                            <button class="button is-link is-rounded has-background-dark">Business</button>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="hero is-medium is-info has-text-white">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">Take the Test!</h1>
-                <div class="columns has-text-centered">
-                    <div class="column">
-                        <i class="fa fa-user-graduate fa-4x"></i>
-                        <hr>
-                        <a class="button is-light is-fullwidth">Adults (18+)</a>
-                    </div>
-                    <div class="column">
-                        <i class="fa fa-child fa-4x"></i>
-                        <hr>
-                        <a class="button is-light is-fullwidth">Young Learners (14-18)</a>
-                    </div>
-                    <div class="column">
-                        <i class="fa fa-baby fa-4x"></i>
-                        <hr>
-                        <a class="button is-light is-fullwidth">Kids (2-13 years)</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="hero is-medium is-primary has-text-dark">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns is-vcentered">
-                    <div class="column is-two-thirds">
-                        <h1 class="title is-size-1">Salient</h1>
-                        <h4 class="subtitle is-size-3">Why us?</h4>
-                        <p class="subtitle">Salient has a track record of delivering results, no matter our customer.</p>
-                    </div>
-                    <div class="column image">
-                        <img class="is-rounded" src="https://i.picsum.photos/id/0/5616/3744.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="content container">
-            <div class="columns">
-                <div class="is-offset-2 is-four column">
-                    <h3 class="title">Links</h3>
-                    <p><a href="">Home</a></p>
-                    <p><a href="">Test</a></p>
-                    <p><a href="">Courses</a></p>
-                    <p><a href="">Contact Us!</a></p>
-                </div>
-                <div class="column has-text-right is-four" style=" margin-top: auto;">
-                    <p>
-                        <a href="https://www.facebook.com/TheEnglishEspresso">
-                            <i class="fa fa-facebook-square fa-2x"></i>
-                        </a>
-                        <a href="https://twitter.com/EnglishEspresso">
-                            <i class="fa fa-twitter-square fa-2x"></i>
-                        </a>
-                        <a href="https://www.instagram.com/english__espresso/">
-                            <i class="fa fa-instagram fa-2x"></i>
-                        </a>
-                    </p>
-                </div>
-                <div class="column is-two"></div>
-            </div>
-            <hr>
-            <div class="columns">
-                <p class="is-offset-2 column">
-                    Made by <a href="https://github.com/ajusa">ajusa</a>.
+        </nav>
+        <div class="tc pt4 nunito w-100">
+            <div class="dark-brand dib pa4-ns bg-white">
+                <h2 class="f2 f1-ns ttu tracked fw4">English Espresso</h2>
+                <p class="f5 f4-ns ttu nunito fw3">
+                    <span x-show="page == ''">Step towards fluency in English</span>
+                    <span x-show="page == '#courses'">View information on courses below</span>
                 </p>
             </div>
         </div>
-    </footer>
-    <script async type="text/javascript" src="bulma.js"></script>
+    </section>
+    <div x-show="page == ''">
+        <section class="w-100 pv4 mw8 center ph3">
+            <h3 class="f2 tc fw4 dark-brand tracked ttu">Courses</h3>
+            <div class="dt black-70">
+                <div class="dtc-ns db">
+                    <div class="dt pv4">
+                        <img class="dtc v-mid mw3" src="images/icons/r.png" alt="">
+                        <div class="dtc pl3 v-top lh-copy">
+                            <b>Foundation Course</b>
+                            <br>
+                            To make sure that everyone starts at the same level, a basic interactive course has been designed.
+                        </div>
+                    </div>
+                    <div class="dt pv4">
+                        <img class="dtc v-mid mw3" src="images/icons/w.png" alt="">
+                        <div class="dtc pl3 v-top lh-copy">
+                            <b>Personalized learning</b>
+                            <br>
+                            Live classes with our English experts make learning English enjoyable, rewarding and a knowledgeable experience
+                        </div>
+                    </div>
+                </div>
+                <div class="dtc-ns v-mid db tc">
+                    <img class="mw3 ph4" src="images/icons/y.png" alt="">
+                </div>
+                <div class="dtc-ns db">
+                    <div class="dt pv4">
+                        <img class="dtc v-mid mw3" src="images/icons/t.png" alt="">
+                        <div class="dtc pl3 v-top lh-copy">
+                            <b>Daily Speaking Practice</b>
+                            <br>
+                            Each student is allocated a partner student for practise of speaking the language over the call
+                        </div>
+                    </div>
+                    <div class="dt pv4">
+                        <img class="dtc v-mid mw3" src="images/icons/e.png" alt="">
+                        <div class="dtc pl3 v-top lh-copy">
+                            <b>Review Classes</b>
+                            <br>
+                            We offer one to one feedback and review classes with our experts at regular intervals so as to track your progress effectively.
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="bg-brand dark-brand">
+            <div class="mw7 center pv5 ph4-ns ph3">
+                <h3 class="f2 tc fw4 ma0">Test your English</h3>
+                <p class="f4 tc">
+                    Take our quick, free online test to check your level. Finish in 12 minutes and get results immediately. The test consists of questions about your basic understanding of the language.
+                </p>
+                <div class="tc w-100 dib mt4">
+                    <a href="#" class="link f4 grow dim brand ba pv2 ph3 ttu tracked bg-dark-brand">Begin Test</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div x-show="page == '#courses'">
+        <section class="w-100 pv4 mw8 center ph3">
+            <h3 class="f2 tc fw4 dark-brand tracked ttu">Course Information</h3>
+            <p class="tc black-80 mw6 center">
+                English Espresso offers courses for all ages be it kids, young learners and adults. Our team understands that each one of us is at a different level on their path to learning English. Our curriculum ensures you a perfect learning experience and is curated to fit in your busy schedule.
+                Choose from our regular or crash course to unlock your next steps in everything English
+            </p>
+            <div class="pt4 flex-ns black-80">
+                <div class="mw6 pa3">
+                    <div class="flex mb2 f4 justify-between">
+                        <b>English One</b> <span class="dark-brand">34 hours | 8 weeks</span>
+                    </div>
+                    Our Flagship course offers 34 hours including 24 hours of face to face interactive sessions, along with 4 hours of feedback sessions and 2 hours of assessment tests at regular intervals.
+                    Students are also asked to undergo an additional 4 hours of foundational course to ascertain everybody at the same learning level.
+                    The course focuses on 4 parameters of English that are Reading, Writing, Listening and speaking. Our curriculum includes activities like pecha-kucha, show and tell, word race, impromptu speech, phonetics, confidence build up sessions etc.
+                    At the end of the course, we expect the student to be able to communicate and express themselves in English in everyday situations.
+                </div>
+                <div class="mw6 pa3">
+                    <div class="flex mb2 f4 justify-between">
+                        <b>English Swift</b> <span class="dark-brand">14 hours | 4 weeks</span>
+                    </div>
+                    Our crash course offers 14 hours including 12 hours of face to face interactive sessions, 1 feedback session and 1 assessment test at regular intervals.
+                    Students are also asked to undergo an additional 4 hours of foundational course to ascertain everybody at the same learning level.
+                    This course is relevant for people who are short on time or would want to fast track their learning experience.
+                </div>
+            </div>
+        </section>
+    </div>
+    <section>
+        <footer class="pa4 ph5-ns bg-black-80 white-90">
+            <div class="flex-ns justify-between">
+                <div class="f4">
+                    <a href="#" class="db pv2 dim link white">Home</a>
+                    <a href="#" class="db pv2 dim link white">Courses</a>
+                    <a href="#" class="db pv2 dim link white">Contact Us</a>
+                </div>
+                <div class="self-end pv2-ns pt3">
+                    <a class="brand link dim pr2" href="https://www.facebook.com/TheEnglishEspresso">
+                        <i class="fa fa-facebook-square fa-2x"></i>
+                    </a>
+                    <a class="brand link dim ph2" href="https://twitter.com/EnglishEspresso">
+                        <i class="fa fa-twitter-square fa-2x"></i>
+                    </a>
+                    <a class="brand link dim ph2" href="https://www.instagram.com/english__espresso/">
+                        <i class="fa fa-instagram fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="mt4 f5">
+                Made by <a class="link brand dim" href="https://github.com/ajusa">ajusa</a>.
+            </div>
+        </footer>
+    </section>
 </body>
 
 </html>

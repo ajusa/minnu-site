@@ -43,9 +43,11 @@
                 <img src="images/logo2.png" class="mw3 mw4-ns dib" alt="Site Name">
             </a>
             <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-                <a class="dim link grow dark-gray f5 f4-l dib mr3 mr4-l" href="#">Home</a>
-                <a class="dim link grow dark-gray f5 f4-l dib mr3 mr4-l" href="#courses">Courses</a>
-                <a class="dim link grow dark-gray f5 f4-l dib mr3 mr4-l" href="#">Contact Us</a>
+                <a class="dim link dark-gray f5 f4-ns mr3" href="#">Home</a>
+                <a class="dim link dark-gray f5 f4-ns mr3" href="#courses">
+                    Courses
+                </a>
+                <a class="dim link dark-gray f5 f4-ns mr3" href="#">Contact Us</a>
             </div>
         </nav>
         <div class="tc pt4 nunito w-100">
@@ -58,11 +60,11 @@
             </div>
         </div>
     </section>
-    <div x-show="page == ''">
+    <div x-show.transition="page == ''">
         <section class="w-100 pv4 mw8 center ph3">
             <h3 class="f2 tc fw4 dark-brand tracked ttu">Courses</h3>
             <div class="dt black-70">
-                <div class="dtc-l db">
+                <div class="dtc-l">
                     <div class="dt ph2 pv4">
                         <img class="dtc v-mid mw3" src="images/icons/r.png" alt="">
                         <div class="dtc pl3 v-top">
@@ -114,7 +116,7 @@
             </div>
         </section>
     </div>
-    <div x-show="page == '#courses'">
+    <div x-show.transition="page == '#courses'">
         <section class="w-100 pv4 mw8 center ph3">
             <h3 class="f2 tc fw4 dark-brand tracked ttu">Course Information</h3>
             <p class="tc black-80 mw6 center">

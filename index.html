@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/60dd5715de.js" crossorigin="anonymous"></script>
     <style>
-    .brand {
+        .brand {
         color: #E8DEBD;
     }
 
@@ -47,7 +47,7 @@
                 <a class="dim link dark-gray f5 f4-ns mr3" href="#courses">
                     Courses
                 </a>
-                <a class="dim link dark-gray f5 f4-ns mr3" href="#">Contact Us</a>
+                <a class="dim link dark-gray f5 f4-ns mr3" href="#contact">Contact Us</a>
             </div>
         </nav>
         <div class="tc pt4 nunito w-100">
@@ -108,7 +108,8 @@
             <div class="mw8 center pv5 ph4-ns ph3">
                 <h3 class="f2 tc fw4 ma0">Test your English</h3>
                 <p class="f4 tc">
-                    Take our quick, free online test to check your level. Finish in 12 minutes and get results immediately. The test consists of questions about your basic understanding of the language.
+                    Take our quick, free online test to check your level. Finish in 12 minutes and get results immediately.
+                    <br> The test consists of questions about your basic understanding of the language.
                 </p>
                 <div class="tc w-100 dib mt4">
                     <a href="#" class="link f4 grow dim brand ba pv2 ph3 ttu tracked bg-dark-brand">Begin Test</a>
@@ -142,13 +143,40 @@
                 </section>
             </div>
     </div>
+    <div x-show.transition="page == '#contact'">
+        <section class="black-80 w-100 pv4 mw8 center ph3">
+            <div class="tc mb4">
+                <h2 class="fw2 nunito f2 ttu tracked dib bb bw2 b--black-10 pa2">Get in Touch</h2>
+            </div>
+            <div class="mw7 center">
+                <form action="">
+                    <div class="flex-ns justify-around">
+                        <div class="w-100 pa3">
+                            <label for="" class="db tc ttu tracked fw3 f4 nunito pa2">Name</label>
+                            <input type="text" class="pv2 ph3 bw1 b--black-10 w-100">
+                        </div>
+                        <div class="w-100 pa3">
+                            <label for="" class="db tc ttu tracked fw3 f4 nunito pa2">Email</label>
+                            <input type="text" class="pv2 ph3 bw1 b--black-10 w-100">
+                        </div>
+                    </div>
+                    <div class="pa3">
+                        <label for="" class="db tc ttu tracked fw3 f4 nunito pa2">Message</label>
+                        <textarea type="text" class="pv2 ph3 bw1 b--black-10 w-100" rows="6"></textarea>
+                    </div>
+                    <div class="tc">
+                        <button class="link f4 grow dim white-70 ba pv2 ph3 ttu tracked bg-black-70">Send Message</button>
+                    </div>
+                </form>
+            </div>
+    </div>
     <section>
         <footer class="pa4 ph5-ns bg-black-80 white-90">
             <div class="flex-ns justify-between">
                 <div class="f4">
                     <a href="#" class="db pv2 dim link white">Home</a>
                     <a href="#courses" class="db pv2 dim link white">Courses</a>
-                    <a href="#" class="db pv2 dim link white">Contact Us</a>
+                    <a href="#contact" class="db pv2 dim link white">Contact Us</a>
                 </div>
                 <div class="self-end pv2-ns pt3">
                     <a class="brand link dim pr2" href="https://www.facebook.com/TheEnglishEspresso">

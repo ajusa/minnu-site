@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/60dd5715de.js" crossorigin="anonymous"></script>
     <style>
-        .brand {
+    .brand {
         color: #E8DEBD;
     }
 
@@ -33,7 +33,6 @@
         outline: 0px dotted currentColor;
     }
     </style>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
 <body class="sans-serif lh-copy" x-data="{page: location.hash}" @hashchange.window="page = location.hash">
@@ -60,126 +59,9 @@
             </div>
         </div>
     </section>
-    <div x-show.transition="page == ''">
-        <section class="w-100 pv4 mw8 center ph3">
-            <h3 class="f2 tc fw4 dark-brand tracked ttu">Courses</h3>
-            <div class="dt black-70">
-                <div class="dtc-l">
-                    <div class="dt ph2 pv4">
-                        <img class="dtc v-mid mw3" src="images/icons/r.png" alt="">
-                        <div class="dtc pl3 v-top">
-                            <b>Foundation Course</b>
-                            <br>
-                            To make sure that everyone starts at the same level, a basic interactive course has been designed.
-                        </div>
-                    </div>
-                    <div class="dt ph2 pv4">
-                        <img class="dtc v-mid mw3" src="images/icons/test.png" alt="">
-                        <div class="dtc pl3 v-top">
-                            <b>Personalized learning</b>
-                            <br>
-                            Live classes with our English experts make learning English enjoyable, rewarding and a knowledgeable experience
-                        </div>
-                    </div>
-                </div>
-                <div class="dtc-l v-mid db tc pr4">
-                    <img class="mw4" src="images/icons/student.png" alt="">
-                </div>
-                <div class="dtc-l db">
-                    <div class="dt ph2 pv4">
-                        <img class="dtc v-mid mw3" src="images/icons/t.png" alt="">
-                        <div class="dtc pl3 v-top">
-                            <b>Daily Speaking Practice</b>
-                            <br>
-                            Each student is allocated a partner student for practise of speaking the language over the call
-                        </div>
-                    </div>
-                    <div class="dt ph2 pv4">
-                        <img class="dtc v-mid mw3" src="images/icons/e.png" alt="">
-                        <div class="dtc pl3 v-top">
-                            <b>Review Classes</b>
-                            <br>
-                            We offer one to one feedback and review classes with our experts at regular intervals so as to track your progress effectively.
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <section class="bg-brand dark-brand">
-            <div class="mw8 center pv5 ph4-ns ph3">
-                <h3 class="f2 tc fw4 ma0">Test your English</h3>
-                <p class="f4 tc">
-                    Take our quick, free online test to check your level. Finish in 12 minutes and get results immediately.
-                    <br> The test consists of questions about your basic understanding of the language.
-                </p>
-                <div class="tc w-100 dib mt4">
-                    <a href="#" class="link f4 grow dim brand ba pv2 ph3 ttu tracked bg-dark-brand">Begin Test</a>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div x-show.transition="page == '#courses'">
-        <section class="black-80 w-100 pv4 mw8 center ph3">
-            <b class="tc f4 db fw6 tracked ttu">Course Information</b>
-            <div class="mw7 center">
-                <p class="black-80 center">
-                    English Espresso offers courses for all ages be it kids, young learners and adults. Our team understands that each one of us is at a different level on their path to learning English. Our curriculum ensures you a perfect learning experience and is curated to fit in your busy schedule.
-                    Choose from our regular or crash course to unlock your next steps in everything English
-                </p>
-                <section class="pv2 pv3-ns">
-                    <div class="mb2 f4 tc">
-                        <b>English One</b> <span class="dark-brand db dib-ns">34 hours | 8 weeks</span>
-                    </div>
-                    Our Flagship course offers 34 hours including 24 hours of face to face interactive sessions, along with 4 hours of feedback sessions and 2 hours of assessment tests at regular intervals.
-                    Students are also asked to undergo an additional 4 hours of foundation course to ascertain everybody at the same learning level.
-                    The course focuses on 4 parameters of English that are Reading, Writing, Listening and speaking. Our curriculum includes activities like pecha-kucha, show and tell, word race, impromptu speech, phonetics, confidence build up sessions etc.
-                    At the end of the course, we expect the student to be able to communicate and express themselves in English in everyday situations.
-                </section>
-                <section class="pv2 pv3-ns">
-                    <div class="mb2 f4 tc"> <b>English Swift</b> <span class="dark-brand db dib-ns">14 hours | 4 weeks</span>
-                    </div>
-                    Our crash course offers 14 hours including 12 hours of face to face interactive sessions, 1 feedback session and 1 assessment test at regular intervals.
-                    Students are also asked to undergo an additional 4 hours of foundation course to ascertain everybody at the same learning level.
-                    This course is relevant for people who are short on time or would want to fast track their learning experience.
-                </section>
-            </div>
-    </div>
-    <div x-show.transition="page == '#contact'">
-        <section class="black-80 w-100 pv4 mw8 center ph3">
-            <div class="tc mb4">
-                <h2 class="fw2 nunito f2 ttu tracked dib bb bw2 b--black-10 pa2">Get in Touch</h2>
-            </div>
-            <div class="mw7 center">
-                <form action="">
-                    <div class="flex-ns justify-around">
-                        <div class="w-100 pa3">
-                            <label for="" class="db tc ttu tracked fw3 f4 nunito pa2">Name</label>
-                            <input type="text" class="pv2 ph3 bw1 b--black-10 w-100">
-                        </div>
-                        <div class="w-100 pa3">
-                            <label for="" type="email" class="db tc ttu tracked fw3 f4 nunito pa2">Email</label>
-                            <input type="text" class="pv2 ph3 bw1 b--black-10 w-100">
-                        </div>
-                    </div>
-                    <div class="flex-ns justify-around">
-                        <div class="w-100 pa3">
-                            <label for="" class="db tc ttu tracked fw3 f4 nunito pa2">Phone Number</label>
-                            <input type="tel" class="pv2 ph3 bw1 b--black-10 w-100">
-                        </div>
-                        <div class="w-100 pa3">
-                            <label for="" class="db tc ttu tracked fw3 f4 nunito pa2">Preferred Call Time</label>
-                            <input type="text" class="pv2 ph3 bw1 b--black-10 w-100">
-                        </div>
-                    </div>
-                    <div class="pa3">
-                        <label for="" class="db tc ttu tracked fw3 f4 nunito pa2">Message</label>
-                        <textarea type="text" class="pv2 ph3 bw1 b--black-10 w-100" rows="6"></textarea>
-                    </div>
-                    <div class="tc">
-                        <button class="link f4 grow dim white-70 ba pv2 ph3 ttu tracked bg-black-70">Send Message</button>
-                    </div>
-                </form>
-            </div>
-    </div>
+    <div x-show.transition="page == ''" import="overview.html"></div>
+    <div x-show.transition="page == '#courses'" import="courses.html"></div>
+    <div x-show.transition="page == '#contact'" import="contact.html"></div>
     <section>
         <footer class="pa4 ph5-ns bg-black-80 white-90">
             <div class="flex-ns justify-between">
@@ -206,5 +88,14 @@
         </footer>
     </section>
 </body>
+<script>
+var imports = document.querySelectorAll('[import]')
+for (let el of imports) {
+    fetch(el.getAttribute("import"))
+        .then(response => response.text())
+        .then(html => { el.innerHTML = html })
+}
+</script>
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
 </html>

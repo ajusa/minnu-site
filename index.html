@@ -61,7 +61,7 @@
     </section>
     <div x-show.transition="page == ''" import="overview.html"></div>
     <div x-show.transition="page == '#courses'" import="courses.html"></div>
-    <div x-show.transition="page == '#contact'" import="contact.html"></div>
+    <div x-show.transition="page.includes('#contact')" import="contact.html"></div>
     <div x-show.transition="page == '#tests'" import="tests.html"></div>
     <div x-show.transition="page == '#adult'" import="adult.html"></div>
     <div x-show.transition="page == '#young_learner'" import="young_learner.html"></div>

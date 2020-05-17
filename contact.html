@@ -1,35 +1,44 @@
 <section class="black-80 w-100 pv4 mw8 center ph3">
     <div class="tc mb4">
+        <div x-show.transition="page.includes('success')">
+            <div class="bg-green white f4 ph4 pv2 fw7 mw6 center">
+                Successfully Submitted Form!
+                <p class="lh-title f5">We will be in touch as soon as possible.</p>
+            </div>
+        </div>
         <h2 class="fw2 nunito f2 ttu tracked dib bb bw2 b--black-10 pa2">Get in Touch</h2>
     </div>
     <div class="mw7 center">
-        <form action="">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="b952a51b-3447-49bb-a44d-4c04e7f5b6ca">
             <div class="flex-ns justify-around">
                 <div class="w-100 pa3">
-                    <label for="" class="db tc ttu tracked fw3 f4 nunito pa2">Name</label>
+                    <label name="name" class="db tc ttu tracked fw3 f4 nunito pa2">Name</label>
                     <input type="text" class="pv2 ph3 bw1 b--black-10 w-100">
                 </div>
                 <div class="w-100 pa3">
-                    <label for="" type="email" class="db tc ttu tracked fw3 f4 nunito pa2">Email</label>
+                    <label name="email" type="email" class="db tc ttu tracked fw3 f4 nunito pa2">Email</label>
                     <input type="text" class="pv2 ph3 bw1 b--black-10 w-100">
                 </div>
+                <!--<input class="dn" type="text" name="subject" value="Contact Form">-->
             </div>
             <div class="flex-ns justify-around">
                 <div class="w-100 pa3">
-                    <label for="" class="db tc ttu tracked fw3 f4 nunito pa2">Phone Number</label>
+                    <label name="phone" class="db tc ttu tracked fw3 f4 nunito pa2">Phone Number</label>
                     <input type="tel" class="pv2 ph3 bw1 b--black-10 w-100">
                 </div>
                 <div class="w-100 pa3">
-                    <label for="" class="db tc ttu tracked fw3 f4 nunito pa2">Preferred Call Time</label>
+                    <label name="$preferredCallTime" class="db tc ttu tracked fw3 f4 nunito pa2">Preferred Call Time</label>
                     <input type="text" class="pv2 ph3 bw1 b--black-10 w-100">
                 </div>
             </div>
             <div class="pa3">
-                <label for="" class="db tc ttu tracked fw3 f4 nunito pa2">Message</label>
+                <label for="" name="message" class="db tc ttu tracked fw3 f4 nunito pa2">Message</label>
                 <textarea type="text" class="pv2 ph3 bw1 b--black-10 w-100" rows="6"></textarea>
             </div>
-            <div class="tc">
-                <button class="link f4 grow dim white-70 ba pv2 ph3 ttu tracked bg-black-70">Send Message</button>
+            <input type="hidden" name="redirectTo" value="https://ajusa.github.io/minnu-site#contact_success">
+            <div class="tc dim grow link">
+                <input class="link white-70 f4 ba pv2 ph3 ttu tracked bg-black-70" type="submit" value="Send Message" />
             </div>
         </form>
     </div>

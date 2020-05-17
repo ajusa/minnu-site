@@ -94,19 +94,19 @@
     </section>
 </body>
 <script>
-var promises = []
 var imports = document.querySelectorAll('[import]')
-for (let el of imports)
-    promises.push(fetch(el.getAttribute("import")).then(r => r.text()).then(html => el.innerHTML = html))
-var scripts = ["young-learner.js"]
-Promise.all(promises).then(() => {
-    for (var script of scripts) {
-        var el = document.createElement('script');
-        el.setAttribute('src', script);
-        document.head.appendChild(el);
-    }
-
-})
+for (let el of imports) {
+    fetch(el.getAttribute("import")).then(r => r.text())
+        .then(html => {
+            el.innerHTML = html
+            var scripts = el.querySelectorAll("script")
+            for (var script of scripts) {
+                var tmp = document.createElement('script');
+                tmp.setAttribute('src', script.src);
+                document.head.appendChild(tmp);
+            }
+        })
+}
 </script>
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 

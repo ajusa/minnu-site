@@ -9,3 +9,4 @@ npm install live-server -g
 ```
 live-server
 ```
+Run that command in the project directory

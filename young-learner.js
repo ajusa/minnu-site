@@ -129,9 +129,10 @@ else {
   }
 
   // Variables
-  const quizContainer = document.getElementById('quiz');
-  const resultsContainer = document.getElementById('results');
-  const submitButton = document.getElementById('submit');
+  var root = document.getElementById("young")
+  const quizContainer = root.querySelector('#quiz');
+  const resultsContainer = root.querySelector('#results');
+  const submitButton = root.querySelector('#submit');
   const myQuestions = [
     {
       headquestion: "Please choose the best word to complete the sentence.",
@@ -361,9 +362,9 @@ else {
   buildQuiz();
 
   // Pagination
-  const previousButton = document.getElementById("previous");
-  const nextButton = document.getElementById("next");
-  const slides = document.querySelectorAll(".slide");
+  const previousButton = root.querySelector("#previous");
+  const nextButton = root.querySelector("#next");
+  const slides = root.querySelectorAll(".slide");
   let currentSlide = 0;
 
   // Show the first slide

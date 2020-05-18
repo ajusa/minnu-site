@@ -48,7 +48,10 @@ font-family: 'Work Sans', sans-serif;
 	background-color: #38a;
 }
 
-
+#kid .picture {
+  height: 100px;
+  width: 100px;
+}
 
 
 

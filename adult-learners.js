@@ -25,8 +25,7 @@ myQuestions.forEach((currentPage, pageNumber) => {
         }
 
         subQuestions.push(
-            `
-            <div>
+           `<div>
             <div class="sub-question"> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join("")} </div>
             </div>`
@@ -134,137 +133,165 @@ else {
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      headquestion: "Please choose the best word to complete the sentence.",
+      headquestion: "Choose the correct word or phrase in the sentences.",
       
         other: [
-        {
-            question: "He comes __ a car.",
-            answers: {
-            a: "at",
-            b: "by",
-            c: "with"
-              },
-              correctAnswer: "b"
-        },
-        {
-            question: "I shall meet you __ 6 o'clock.",
-            answers: {
-                a: "at",
-                b: "on",
-                c: "in"
-              },
-              correctAnswer: "a"
-        },
-        {
-            question: "We ____ going to a party tonight.",
-            answers: {
-                a: "have",
-                b: "were",
-                c: "are"
-            },
-
-              correctAnswer: "c"
-        },
          {
-              question: "She wants to become ___ engineer.",
-              answers: {
-                a: "an",
-                b: "a",
-                c: "the"
-              },
-              correctAnswer: "a"
-        }
+      question: "My parents _____ in a two-bedroom apartment.",
+      answers: {
+        a: "Live",
+        b: "Lives",
+        c: "are live"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Good morning. I tried to _____ you last night.",
+      answers: {
+        a: "Contacted",
+        b: "Contacting",
+        c: "Contact"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "There's ___ information to remember.",
+      answers: {
+        a: "Many",
+        b: "a lot of",
+        c: "much"
+      },
+      correctAnswer: "b"
+    },
+  {
+      question: "I'm sorry. I didn't _____ to hurt you.",
+      answers: {
+        a: "mean",
+        b: "meant",
+        c: "think"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "I'll______ you where you can sleep.",
+      answers: {
+        a: "show",
+        b: "watch",
+        c: "see"
+      },
+      correctAnswer: "a"
+    },
+
 
     ]
 },
 {
-   headquestion: "Choose the right answers for the questions",
+   headquestion: "Choose the word or phrase that has a similar meaning to?",
    other: 
    [
         {
-          question: "When will you come in the bedroom?",
-          answers: {
-            a: "Watch",
-            b: "Not long",
-            c: "At 6 o'clock"
-          },
-          correctAnswer: "c"
-        },
-         {
-              question: "Can we go out for a Pizza tonight?",
-              answers: {
-                a: "Not long",
-                b: "No, I'm busy",
-                c: "You did a brilliant job"
-              },
-              correctAnswer: "b"
-        },
-         {
-              question: "How long are you here for?",
-              answers: {
-                a: "Till tomorrow",
-                b: "Since 5 days",
-                c: "2 days ago"
-              },
-              correctAnswer: "a"
-        },
-         {
-              question: "Do you want some butter in your bread?",
-              answers: {
-                a: "Yes, I want it",
-                b: "Sorry he's not here",
-                c: "Not long"
-              },
-              correctAnswer: "a"
-        }
-
-   ]
-
-},
-{
-   headquestion: "Choose the Opposite of the following words",
-   other: 
-   [
-        {
-            question: "Pretty",
-            answers: {
-              a: "Ugly",
-              b: "Fine",
-              c: "Unimpressive"
-           },
-            correctAnswer: "a"
-        },
-        {
-            question: "Dead",
+  
+      question: "Fall",
       answers: {
-        a: "Open",
-        b: "Alive",
+        a: "Rapid",
+        b: "Drop",
+        c: "Certain"
+      },
+      correctAnswer: "b"
+    },
+    {
+      question: "Important",
+      answers: {
+        a: "Remarkable",
+        b: "Necessary",
         c: "Accurate"
       },
       correctAnswer: "b"
-
     },
     {
-        question: "Close",
+      question: "Substantial",
       answers: {
-        a: "Broke",
-        b: "Open",
-        c: "Unlimited"
+        a: "Considerable",
+        b: "Argumentative",
+        c: "Worthless"
+        
       },
-      correctAnswer: "b"
-
-  },
+      correctAnswer: "a"
+    },
   {
-    question: "Fast",
+      question: "Seize",
       answers: {
-        a: "Costly",
-        b: "Slow",
-        c: "Cheap"
+        a: "Start",
+        b: "release",
+        c: "grasp"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "Drastic ",
+      answers: {
+        a: "delicate",
+        b: "extreme",
+        c: "hard"
       },
       correctAnswer: "b"
+    },
 
-    }
    ]
+},
+{
+   headquestion: "Choose the correct word or phrase in the sentences.",
+   other: 
+   [
+            {
+      question: "Rachel was ___ for a few minutes.",
+      answers: {
+        a: "quite",
+        b: "Quiet",
+        c: "quit"
+      },
+      correctAnswer: "b"
+    },
+    {
+      question: "Your perfume has a wonderful ___.",
+      answers: {
+        a: "sent",
+        b: "quit",
+        c: "scent"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "_______ phone was stolen in the class?",
+      answers: {
+        a: "whom",
+        b: "whose",
+        c: "who’s"
+        
+      },
+      correctAnswer: "b"
+    },
+  {
+      question: "Can we book a ____ in the hotel.",
+      answers: {
+        a: "suite",
+        b: "sweet",
+        c: "suit"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "My mother has _______.",
+      answers: {
+        a: "Long black hair",
+        b: "Black long hair ",
+        c: "Long hair black"
+      },
+      correctAnswer: "a"
+    }
+
+   ]
+
 },
 {
    headquestion: "Choose the best word to complete the sentence",
@@ -320,40 +347,110 @@ else {
    ]
 },
 {
-   headquestion: "Listen to the audio and answer the following questions",
-   audio: "young1.m4a",
+   headquestion: "Choose the correct word or phrase in the sentences",
    other: 
    [
-         {
-      question: "How long can Snails sleep in one go?",
+          {
+      question: "I have ____ milk you can use.",
       answers: {
-        a: "3 months",
-        b: "3 years",
-        c: "30 days"
+        a: "little",
+        b: "a little",
+        c: "very few"
       },
       correctAnswer: "b"
     },
-
-          {
-      question: "Why do Cats make meow sound?",
+    {
+      question: "He sat on the bed, rubbing his forehead as she continued, I know she ___, but you did too.",
       answers: {
-        a: "To talk to other cats",
-        b: "To show when they are hungry",
-        c: "To get the attention from Humans"
+        a: "lied",
+        b: "lies",
+        c: "lying"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "I wonder if they will change ___ plans?",
+      answers: {
+        a: "they're",
+        b: "there",
+        c: "their"
       },
       correctAnswer: "c"
     },
- {
-      question: "What's is the female gender of peacock?",
+  {
+      question: "When I came to know I had dropped my purse, I decided to _____ my steps.",
       answers: {
-        a: "Hen",
-        b: "Peahen",
-        c: "Chicken"
+        a: "return",
+        b: "retrace",
+        c: "go back"
       },
       correctAnswer: "b"
+    },
+    {
+      question: "There's ____ much salt in the soup.",
+      answers: {
+        a: "too",
+        b: "sot",
+        c: "very"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Passengers are requested to ___________ their seat belts.",
+      answers: {
+       a: "quit",
+        b: "unfasten",
+        c: "unchecked"
+      },
+      correctAnswer: "d"
+    },
+  {
+      question: "Can you ____ the ginger for me?",
+      answers: {
+        a: "grate",
+        b: "great",
+        c: "greet"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "I haven't worked _____ last December.",
+      answers: {
+        a: "for",
+        b: "by",
+        c: "since"
+      },
+      correctAnswer: "c"
     }
+
     ]
-}
+},
+{
+   headquestion: "Listen to the audio and answer the following questions",
+   audio: "adults1.mpg",
+   other: 
+   [
+          {
+      question: "Why does social media platforms collect users personal data?",
+      answers: {
+        a: "For research purpose only",
+        b: "For your safety",
+        c: "To show you ads"
+      },
+      correctAnswer: "c"
+    },
+    {
+      question: "In what form do the companies store Individuals data?",
+      answers: {
+        a: "As a Digital card",
+        b: "In physical form",
+        c: "Lockers in Banks"
+      },
+      correctAnswer: "a"
+    }
+
+    ]
+    }
     
   ];
 

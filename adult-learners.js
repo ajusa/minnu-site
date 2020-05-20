@@ -17,7 +17,7 @@ myQuestions.forEach((currentPage, pageNumber) => {
 
           // ...add an HTML radio button
           answers.push(
-            `<label>
+            `<label class="db pv1">
               <input type="radio" name="question${questionCounter}" value="${letter}">
               ${currentQuestion.answers[letter]}
             </label>`
@@ -25,8 +25,8 @@ myQuestions.forEach((currentPage, pageNumber) => {
         }
 
         subQuestions.push(
-           `<div>
-            <div class="sub-question"> ${currentQuestion.question} </div>
+           `<div class="pv3">
+            <div class="sub-question"><span class="question-number">${questionCounter}</span> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join("")} </div>
             </div>`
         )
@@ -39,7 +39,7 @@ myQuestions.forEach((currentPage, pageNumber) => {
 
     if(currentPage.audio) {
       output.push(
-          `<div class="slide">
+          `<div class="dn">
             <div class="question"> ${currentPage.headquestion} </div>
             <audio controls>
               <source src="./asset/${currentPage.audio}" type="audio/ogg">
@@ -50,8 +50,8 @@ myQuestions.forEach((currentPage, pageNumber) => {
     }
 else {
   output.push(
-          `<div class="slide">
-            <div class="question"> ${currentPage.headquestion} </div>
+          `<div class="dn">
+            <div class="f4"> ${currentPage.headquestion} </div>
             <div class="sub-questions"> ${subQuestions.join("")} </div>
           </div>`
         );
@@ -80,9 +80,9 @@ else {
 
       // find selected answer
           const answerContainer = answerContainers[qNumber-1];
-          console.log(answerContainer)
+          
           const selector = `input[name=question${qNumber}]:checked`;
-          console.log(selector)
+          
 
           const userAnswer = (answerContainer.querySelector(selector) || {}).value;
           // if answer is correct
@@ -100,8 +100,8 @@ else {
   }
 
   function showSlide(n) {
-    slides[currentSlide].classList.remove('active-slide');
-    slides[n].classList.add('active-slide');
+    slides[currentSlide].classList.add('dn');
+    slides[n].classList.remove('dn');
     currentSlide = n;
     if(currentSlide === 0){
       previousButton.style.display = 'none';
@@ -461,7 +461,7 @@ else {
   // Pagination
   const previousButton = root.querySelector("#previous");
   const nextButton = root.querySelector("#next");
-  const slides = root.querySelectorAll(".slide");
+  const slides = root.querySelectorAll(".dn");
   let currentSlide = 0;
 
   // Show the first slide

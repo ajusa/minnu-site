@@ -17,7 +17,7 @@ myQuestions.forEach((currentPage, pageNumber) => {
 
           // ...add an HTML radio button
           answers.push(
-            `<label>
+            `<label class="db pv1">
               <input type="radio" name="question${questionCounter}" value="${letter}">
               ${currentQuestion.answers[letter]}
             </label>`
@@ -26,8 +26,9 @@ myQuestions.forEach((currentPage, pageNumber) => {
 
         if(currentQuestion.audio) {
               subQuestions.push(
-               `<div>
-                <div class="sub-question"> ${currentQuestion.question} </div>
+               `<div class="pv3">
+                <div class="sub-question">
+                <span class="question-number">${questionCounter}</span> ${currentQuestion.question} </div>
                 <audio controls>
                   <source src="./asset/${currentQuestion.audio}" type="audio/ogg">
                 </audio>
@@ -37,8 +38,8 @@ myQuestions.forEach((currentPage, pageNumber) => {
         }
         else if(currentQuestion.picture){
               subQuestions.push(
-               `<div>
-                <div class="sub-question"> ${currentQuestion.question} </div>
+               `<div class="pv3">
+                <div class="sub-question"><span class="question-number">${questionCounter}</span> ${currentQuestion.question} </div>
                 <img class="picture" src="./images/${currentQuestion.picture}"></img>
                 <div class="answers"> ${answers.join("")} </div>
                 </div>`
@@ -46,8 +47,8 @@ myQuestions.forEach((currentPage, pageNumber) => {
         }
         else {
               subQuestions.push(
-               `<div>
-                <div class="sub-question"> ${currentQuestion.question} </div>
+               `<div class="pv3">
+                <div class="sub-question"> <span class="question-number">${questionCounter}</span> ${currentQuestion.question} </div>
                 <div class="answers"> ${answers.join("")} </div>
                 </div>`
             )
@@ -61,8 +62,8 @@ myQuestions.forEach((currentPage, pageNumber) => {
       });
 
   output.push(
-          `<div class="slide">
-            <div class="question"> ${currentPage.headquestion} </div>
+          `<div class="dn">
+            <div class="f4"> ${currentPage.headquestion} </div>
             <div class="sub-questions"> ${subQuestions.join("")} </div>
           </div>`
         );
@@ -90,9 +91,9 @@ myQuestions.forEach((currentPage, pageNumber) => {
 
       // find selected answer
           const answerContainer = answerContainers[qNumber-1];
-          console.log(answerContainer)
+          
           const selector = `input[name=question${qNumber}]:checked`;
-          console.log(selector)
+          
 
           const userAnswer = (answerContainer.querySelector(selector) || {}).value;
           // if answer is correct
@@ -110,8 +111,8 @@ myQuestions.forEach((currentPage, pageNumber) => {
   }
 
   function showSlide(n) {
-    slides[currentSlide].classList.remove('active-slide');
-    slides[n].classList.add('active-slide');
+    slides[currentSlide].classList.add('dn');
+    slides[n].classList.remove('dn');
     currentSlide = n;
     if(currentSlide === 0){
       previousButton.style.display = 'none';
@@ -378,14 +379,14 @@ myQuestions.forEach((currentPage, pageNumber) => {
   // Pagination
   const previousButton = root.querySelector("#previous");
   const nextButton = root.querySelector("#next");
-  const slides = root.querySelectorAll(".slide");
+  const slides = root.querySelectorAll(".dn");
   let currentSlide = 0;
 
   // Show the first slide
   showSlide(currentSlide);
 
   // Event listeners
-  submitButton.addEventListener('click', showResults);
+  submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 })();

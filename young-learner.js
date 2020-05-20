@@ -27,7 +27,7 @@ myQuestions.forEach((currentPage, pageNumber) => {
         subQuestions.push(
             `
             <div class="pv3">
-            <div class="f4"> ${currentQuestion.question} </div>
+            <div class="f4"><span class="question-number">${questionCounter}</span> ${currentQuestion.question} </div>
             <div class="answers"> ${answers.join("")} </div>
             </div>`
         )
@@ -81,9 +81,7 @@ else {
 
       // find selected answer
           const answerContainer = answerContainers[qNumber-1];
-          console.log(answerContainer)
           const selector = `input[name=question${qNumber}]:checked`;
-          console.log(selector)
 
           const userAnswer = (answerContainer.querySelector(selector) || {}).value;
           // if answer is correct

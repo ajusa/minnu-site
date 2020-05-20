@@ -37,26 +37,26 @@
 </head>
 
 <body class="sans-serif lh-copy" x-data="{page: location.hash}" @hashchange.window="page = location.hash">
-    <section class="vh-75 cover" style="background: linear-gradient(120deg, white 50%, #E8DEBD 50%)">
-        <nav class="db dt-l w-100 border-box pa3 ph5-l">
-            <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb3 mb0-l" href="#" title="Home">
-                <img src="images/logo2.png" class="mw3 mw4-ns dib" alt="Site Name">
+    <nav class="db dt-l w-100 border-box pa3 ph5-l">
+        <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb3 mb0-l" href="#" title="Home">
+            <img src="images/logo2.png" class="mw2 mw3-ns dib" alt="Site Name">
+        </a>
+        <div class="nunito fw7 db dtc-l v-mid w-100 w-75-l tc tr-l">
+            <a class="dim link dark-brand f5 f4-ns mr3" href="#">Home</a>
+            <a class="dim link dark-brand f5 f4-ns mr3" href="#courses">
+                Learn English
             </a>
-            <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-                <a class="dim link dark-gray f5 f4-ns mr3" href="#">Home</a>
-                <a class="dim link dark-gray f5 f4-ns mr3" href="#courses">
-                    Learn English
-                </a>
-                <a class="dim link dark-gray f5 f4-ns mr3" href="#tests">
-                    English Test
-                </a>
-                <a class="dim link dark-gray f5 f4-ns mr3" href="#contact">Contact Us</a>
-            </div>
-        </nav>
-        <div class="tc pt4 nunito w-100">
+            <a class="dim link dark-brand f5 f4-ns mr3" href="#tests">
+                English Test
+            </a>
+            <a class="dim link dark-brand f5 f4-ns mr3" href="#contact">Contact Us</a>
+        </div>
+    </nav>
+    <section x-show.transition="page == ''" class="vh-75 flex items-center cover" style="background: linear-gradient(120deg, white 50%, #E8DEBD 50%)">
+        <div class="tc pb4 nunito w-100">
             <div class="dark-brand dib pa4-ns bg-white">
-                <h2 class="f2 f1-ns ttu tracked fw4">English Espresso</h2>
-                <p class="f5 f4-ns ttu nunito fw3">
+                <h2 class="f2 f1-ns ttu tracked fw8 mb0">English Espresso</h2>
+                <p class="f5 f4-ns ttu nunito fw3 mt2">
                     <span x-show="page == ''">Step towards fluency in English</span>
                     <span x-show="page == '#courses'">View information on courses below</span>
                 </p>

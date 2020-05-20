@@ -29,8 +29,8 @@ myQuestions.forEach((currentPage, pageNumber) => {
                `<div class="pv3">
                 <div class="sub-question">
                 <span class="question-number">${questionCounter}</span> ${currentQuestion.question} </div>
-                <audio controls>
-                  <source src="./asset/${currentQuestion.audio}" type="audio/ogg">
+                <audio controls controlsList="nodownload">
+                  <source src="./asset/${currentQuestion.audio}" type="audio/ogg" >
                 </audio>
                 <div class="answers"> ${answers.join("")} </div>
                 </div>`

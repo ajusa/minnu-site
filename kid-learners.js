@@ -199,7 +199,7 @@ myQuestions.forEach((currentPage, pageNumber) => {
       picture: "nose.jpg",
       answers: {
         a: "Ears",
-        b: "Toe",
+        b: "nose",
         c: "Thumb"
       },
       correctAnswer: "b"

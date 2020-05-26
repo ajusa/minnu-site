@@ -385,6 +385,15 @@ myQuestions.forEach((currentPage, pageNumber) => {
   // Show the first slide
   showSlide(currentSlide);
 
+  document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
+
   // Event listeners
   submitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);

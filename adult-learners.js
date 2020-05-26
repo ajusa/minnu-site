@@ -295,10 +295,10 @@ else {
 
 },
 {
-   headquestion: "Choose the best word to complete the sentence",
+   headquestion: "Choose the correct word or phrase in the sentences",
    other: 
    [
-        {
+     {
             question: "I have ____ milk you can use.",
             answers: {
         a: "a little",
@@ -308,58 +308,7 @@ else {
       correctAnswer: "a"
 
         },
-        {
-      question: "Why ________ playing football tomorrow?",
-      answers: {
-        a: "isn't he",
-        b: "he isn't",
-        c: "he not is"
-      },
-      correctAnswer: "a"
-    },
-
-     {
-      question: "My parents _____ in a two-bedroom apartment.",
-      answers: {
-        a: "live",
-        b: "lives",
-        c: "are live"
-      },
-      correctAnswer: "a"
-    },
-   {
-      question: "Shweta has ___ the journey already.",
-      answers: {
-        a: "started",
-        b: "starter",
-        c: "start"
-      },
-      correctAnswer: "a"
-    },
-      {
-      question: "I wonder if they will change ___ plans.",
-      answers: {
-        a: "they're",
-        b: "there",
-        c: "their"
-      },
-      correctAnswer: "c"
-    }
-   ]
-},
-{
-   headquestion: "Choose the correct word or phrase in the sentences",
-   other: 
-   [
-          {
-      question: "I have ____ milk you can use.",
-      answers: {
-        a: "little",
-        b: "a little",
-        c: "very few"
-      },
-      correctAnswer: "b"
-    },
+     
     {
       question: "He sat on the bed, rubbing his forehead as she continued, I know she ___, but you did too.",
       answers: {

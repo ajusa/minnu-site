@@ -7,11 +7,45 @@
         <div class="tc nunito">
             <h1>Quiz</h1>
         </div>
-        <div id="quiz"></div>
+        <div id="quiz">
+        </div>
+
+        
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+
+            <section class="thanks-submission">
+            <span class="modal-close">&times;</span>
+            <br/>
+
+            <div>Thanks for submitting the test</div>
+            <div id="results"></div>
+            <div>To learn speaking English, fill up this @contact form and check our our @courses</div>
+            <br />
+        </section>
+            <!--  -->
+            <form class="get-customer-details">
+            <p>To get your personalised report, add your information</p>
+            <p>
+                <label for="name">Enter your name:</label>
+                <input  type="text" maxlength="50" name="name" required>
+            </p>
+            <p>
+                <label for="phone">Whatsapp number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[789][0-9]{9}" required>
+            </p>
+            <p>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email">
+            </p>
+            <button id="submit-details">Submit</button>
+            </form>
+          </div>
+        </div>
         <button id="previous" class="mh2 f5 grow brand ba pv2 ph3 ttu tracked bg-dark-brand">Previous Question</button>
         <button id="next" class="mh2 f5 grow brand ba pv2 ph3 ttu tracked bg-dark-brand">Next Question</button>
         <button id="submit" class="mh2 f5 grow brand ba pv2 ph3 ttu tracked bg-dark-brand">Submit Quiz</button>
-        <div id="results"></div>
+        
     </div>
 </div>
 <script src="kid-learners.js"></script>

@@ -380,6 +380,9 @@ myQuestions.forEach((currentPage, pageNumber) => {
   const previousButton = root.querySelector("#previous");
   const nextButton = root.querySelector("#next");
   const slides = root.querySelectorAll(".dn");
+  const detailSubmitButton = root.querySelector('#submit-details');
+  const thanksSection = root.querySelector(".thanks-submission");
+  const form = root.querySelector("form");
   let currentSlide = 0;
 
   // Show the first slide
@@ -395,7 +398,24 @@ myQuestions.forEach((currentPage, pageNumber) => {
 }, true);
 
   // Event listeners
-  submitButton.addEventListener("click", showResults);
+  detailSubmitButton.addEventListener("click", showResults);
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
+
+    var modal = document.getElementById("myModal");
+var span = document.getElementsByClassName("modal-close")[0];
+submitButton.onclick = function() {
+  modal.style.display = "block";
+}
+
+detailSubmitButton.onclick = function() {
+  event.preventDefault();
+  thanksSection.style.display = "block";
+  form.style.display = "none";
+
+}
+span.onclick = function() {
+  modal.style.display = "none";
+  window.location.reload();
+}
 })();

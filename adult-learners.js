@@ -187,7 +187,7 @@ else {
     ]
 },
 {
-   headquestion: "Choose the word or phrase that has a similar meaning to?",
+   headquestion: "Choose the word that has a similar meaning to?",
    other: 
    [
         {
@@ -223,17 +223,17 @@ else {
       question: "Seize",
       answers: {
         a: "Start",
-        b: "release",
-        c: "grasp"
+        b: "Release",
+        c: "Grasp"
       },
       correctAnswer: "c"
     },
     {
       question: "Drastic ",
       answers: {
-        a: "delicate",
-        b: "extreme",
-        c: "hard"
+        a: "Delicate",
+        b: "Extreme",
+        c: "Hard"
       },
       correctAnswer: "b"
     },
@@ -248,7 +248,7 @@ else {
       question: "Rachel was ___ for a few minutes.",
       answers: {
         a: "quite",
-        b: "Quiet",
+        b: "quiet",
         c: "quit"
       },
       correctAnswer: "b"
@@ -265,9 +265,9 @@ else {
     {
       question: "_______ phone was stolen in the class?",
       answers: {
-        a: "whom",
-        b: "whose",
-        c: "who’s"
+        a: "Whom",
+        b: "Whose",
+        c: "Who’s"
         
       },
       correctAnswer: "b"
@@ -284,9 +284,9 @@ else {
     {
       question: "My mother has _______.",
       answers: {
-        a: "Long black hair",
-        b: "Black long hair ",
-        c: "Long hair black"
+        a: "long black hair",
+        b: "black long hair ",
+        c: "long hair black"
       },
       correctAnswer: "a"
     }
@@ -340,7 +340,7 @@ else {
       question: "There's ____ much salt in the soup.",
       answers: {
         a: "too",
-        b: "sot",
+        b: "so",
         c: "very"
       },
       correctAnswer: "a"

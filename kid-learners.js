@@ -216,11 +216,11 @@ myQuestions.forEach((currentPage, pageNumber) => {
     },
   {
       question: "Which picture shows the peom 'twinkle twinkle little star'?",
-      picture: "TwinkleLittleStar.jpg",
+      
       answers: {
-        a: "Jungle photo",
-        b: "Family cartoon",
-        c: "Star"
+        a: "Jungle.jpg",
+        b: "Family.png",
+        c: "TwinkleLittleStar.jpg"
       },
       correctAnswer: "c"
     },

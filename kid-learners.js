@@ -199,7 +199,7 @@ myQuestions.forEach((currentPage, pageNumber) => {
       picture: "nose.jpg",
       answers: {
         a: "Ears",
-        b: "nose",
+        b: "Nose",
         c: "Thumb"
       },
       correctAnswer: "b"
@@ -324,7 +324,7 @@ myQuestions.forEach((currentPage, pageNumber) => {
    ]
 },
 {
-   headquestion: "Listening",
+   headquestion: " Listen to the audio and answer the following questions ",
    other: 
    [
            {
@@ -358,7 +358,7 @@ myQuestions.forEach((currentPage, pageNumber) => {
       correctAnswer: "b"
     },
     {
-      question: "Where is shinchan?",
+      question: "Where is Shinchan?",
       audio: "question-15-kids.m4a",
       answers: {
         a: "Bathroom",

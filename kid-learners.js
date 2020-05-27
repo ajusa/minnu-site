@@ -216,8 +216,8 @@ myQuestions.forEach((currentPage, pageNumber) => {
     },
   {
       question: "Which picture shows the peom 'twinkle twinkle little star'?",
-      
-      answers: {
+    
+      answers: {picture:
         a: "Jungle.jpg",
         b: "Family.png",
         c: "TwinkleLittleStar.jpg"

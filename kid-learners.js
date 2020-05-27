@@ -271,59 +271,6 @@ myQuestions.forEach((currentPage, pageNumber) => {
 
 },
 {
-   headquestion: "Choose the best word to complete the sentence",
-   other: 
-   [
-        {
-            question: "I have ____ milk you can use.",
-            answers: {
-        a: "a little",
-        b: "little",
-        c: "few"
-      },
-      correctAnswer: "a"
-
-        },
-        {
-      question: "Why ________ playing football tomorrow?",
-      answers: {
-        a: "isn't he",
-        b: "he isn't",
-        c: "he not is"
-      },
-      correctAnswer: "a"
-    },
-
-     {
-      question: "My parents _____ in a two-bedroom apartment.",
-      answers: {
-        a: "live",
-        b: "lives",
-        c: "are live"
-      },
-      correctAnswer: "a"
-    },
-   {
-      question: "Shweta has ___ the journey already.",
-      answers: {
-        a: "started",
-        b: "starter",
-        c: "start"
-      },
-      correctAnswer: "a"
-    },
-      {
-      question: "I wonder if they will change ___ plans.",
-      answers: {
-        a: "they're",
-        b: "there",
-        c: "their"
-      },
-      correctAnswer: "c"
-    }
-   ]
-},
-{
    headquestion: " Listen to the audio and answer the following questions ",
    other: 
    [
